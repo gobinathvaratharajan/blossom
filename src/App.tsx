@@ -1,11 +1,11 @@
+import { Button } from "./components/bottom/Button"
 
 
 function App() {
 
   return (
     <>
-      <div>
-    </div>
+      <Button primary label="Secondary Button" onClick={() => alert('Secondary Button Clicked')} />
     </>
   )
 }
