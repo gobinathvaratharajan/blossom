@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+  width: 320px;
+}
+
+.trigger {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  min-height: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.placeholder {
+  color: #999;
+}
+
+.tag {
+  background: #f3f4f6;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  max-height: 300px;
+  overflow: auto;
+  z-index: 10;
+}
+
+.search {
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.item {
+  padding: 6px 10px;
+}
+
+.children {
+  padding-left: 16px;
+}

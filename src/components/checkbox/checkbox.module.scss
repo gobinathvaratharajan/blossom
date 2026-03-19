@@ -1,0 +1,21 @@
+.container {
+  padding-left: 16px;
+}
+
+.item {
+  margin: 6px 0;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.children {
+  margin-left: 20px;
+  border-left: 1px dashed #ddd;
+  padding-left: 12px;
+}
