@@ -1,0 +1,92 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 9999px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #f472b6;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+/* Intent */
+.primary {
+  background-color: #ec4899;
+  color: #fff;
+
+  &:hover {
+    background-color: #db2777;
+  }
+}
+
+.secondary {
+  background-color: #f3f4f6;
+  color: #111827;
+
+  &:hover {
+    background-color: #e5e7eb;
+  }
+}
+
+.outline {
+  border: 1px solid #d1d5db;
+
+  &:hover {
+    background-color: #f9fafb;
+  }
+}
+
+.ghost {
+  background: transparent;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
+}
+
+/* Size */
+.small {
+  height: 32px;
+  padding: 0 12px;
+}
+
+.medium {
+  height: 40px;
+  padding: 0 16px;
+}
+
+.large {
+  height: 48px;
+  padding: 0 24px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

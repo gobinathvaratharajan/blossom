@@ -1,13 +1,24 @@
-import { Button } from "./components/bottom/Button"
-
+import { Button } from "./components";
 
 function App() {
-
   return (
     <>
-      <Button primary label="Secondary Button" onClick={() => alert('Secondary Button Clicked')} />
+      <Button intent="secondary">Secondary</Button>
+      <Button intent="outline">Outline</Button>
+      <Button intent="ghost">Ghost</Button>
+      <Button leftIcon="🔥">Fire</Button>
+
+      <Button rightIcon="➡️">Next</Button>
+      <Button disabled>Disabled</Button>
+
+      <Button leftIcon="👈" rightIcon="👉">
+        Both Icons
+      </Button>
+      <Button intent="primary" size="large" fullWidth leftIcon="🔐">
+        Login
+      </Button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
